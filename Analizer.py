@@ -1,14 +1,10 @@
 import EyeDetection as eye
-#import sys
 import matplotlib
 import numpy as np
 matplotlib.use('Qt4Agg') 
 import matplotlib.pyplot as plt
 
 path = "Results"
-#user = "Rutherford"
-#password = "jango"
-#camara = "http://" + user + ":" + password + "@192.168.0.6:8080/video?x.mjpeg"
 camara = 0
 time, dif, averageDif, std = eye.main(path, True, camara)
 
